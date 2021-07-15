@@ -7,7 +7,7 @@ const cards = require('./cards')
 const fs = require('fs');
 
 const client = new Discord.Client();
-let bot = new Eris("ODY0NzMwNDkzMzMzNjY3ODUz.YO5tBw.8HVnlbX-4lIwDUdsw-N1r0fBTh0");
+let bot = new Eris("");
 let prefix = "-";
 
 client.on("ready", () => {
@@ -119,4 +119,4 @@ bot.on("messageCreate", async message => {
 
 bot.connect();
 
-client.login("ODY0NzMwNDkzMzMzNjY3ODUz.YO5tBw.8HVnlbX-4lIwDUdsw-N1r0fBTh0");
+client.login("");
