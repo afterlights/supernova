@@ -32,8 +32,16 @@ module.exports.run = async(message) => {
   }
 
   let rand_one = Math.floor(Math.random()*file.length);
-  let rand_two = Math.floor(Math.random()*file.length);
-  let rand_three = Math.floor(Math.random()*file.length);
+  var rand_two=rand_one;
+  while (rand_two==rand_one)
+  {
+     rand_two = Math.floor(Math.random()*file.length);
+  }
+  var rand_three=rand_two;
+  while (rand_two==rand_three || rand_one==rand_three)
+  {
+      rand_three = Math.floor(Math.random()*file.length);
+  }
 
 
   let card_one = file[rand_one];

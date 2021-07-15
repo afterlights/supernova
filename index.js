@@ -7,12 +7,12 @@ const cards = require('./cards')
 const fs = require('fs');
 
 const client = new Discord.Client();
-let bot = new Eris("");
+let bot = new Eris("ODY0NzMwNDkzMzMzNjY3ODUz.YO5tBw.EKQ_sfHxBiO3_5zo8pOOzFdcsAo");
 let prefix = "-";
 
 client.on("ready", () => {
     console.log("Supernova is ready to go!");
-    client.user.setActivity("hello", {type: "watching"});
+    client.user.setActivity('the server', { type: 'WATCHING' });
 })
 
 client.on("message", (message) => {
@@ -119,4 +119,4 @@ bot.on("messageCreate", async message => {
 
 bot.connect();
 
-client.login("");
+client.login("ODY0NzMwNDkzMzMzNjY3ODUz.YO5tBw.EKQ_sfHxBiO3_5zo8pOOzFdcsAo");
